@@ -1,0 +1,11 @@
+{
+    "scripts": {
+        "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/styles/style.css --watch"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "tailwindcss": "^3.3.2"
+    }
+}

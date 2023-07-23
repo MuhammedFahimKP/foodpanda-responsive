@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="images/foodpanda_logo_2023.svg" type="image/x-icon">
+    
+</head>
+<body class="">
+  <!-- header sec start -->
+
+  <header class="flex  flex-row justify-between items-center h-16  w-auto ">
+    <!-- left sec start -->
+    <section class="flex flex-row justify-center items-center  md:mx-4 lg:mx-6 sm:mx-auto max-sm:mx-2">
+      <section id="left" class="flex flex-row  items-center justify-center mx-auto w-auto px-auto">
+        <img src="images/foodpanda_logo_2023.svg" class="w-auto h-auto" alt="" srcset="">
+      </section>
+    </section>
+    <!-- left sec end -->
+
+
+    <!-- middle section  start -->
+    <section class="flex flex-row justify-start items-center   mr-40 ">
+      <!-- only lg  and above elements start  -->
+      <section id="right" class="hidden  lg:block w-auto">
+        <section id="middle" class="ml-6 md:flex flex-row h-full  items-center">
+          
+          <nav class="border-t-[3px]   border-pink-500 w-20 h-16 mr-4 flex justify-center items-center bg-gray-900/5 transition-1s">
+            <a href="" class="font-bold  text-sm tracking-tighter font-sans">Home</a>
+          </nav>
+          <nav class="hover:border-t-[3px]   border-pink-500 w-20 h-16 mr-4 flex justify-center items-center bg-gray-900/5">
+            <a href="" class="font-bold text-sm tracking-tighter font-sans">About</a>
+          </nav>
+          <nav class="hover:border-t-[3px]   border-pink-500 w-20 h-16 mr-4 flex justify-center items-center ">
+            <a href="" class="font-bold text-sm tracking-tighter font-sans">Newsroom</a>
+          </nav>
+          <nav class="hover:border-t-[3px]   border-pink-500 w-20 h-16 mr-4 flex justify-center  items-center ">
+            <a href="" class="font-bold text-sm  font-sans">pada ads</a>
+          </nav>
+          <nav class="hover:border-t-[3px]   border-pink-500 w-20 h-16 mr-4 flex justify-center items-center bg-gray-900/5">
+            <a href="" class="font-bold text-sm tracking-tighter font-sans">Contact</a>
+          </nav>
+           <nav class="hover:border-t-[3px]   border-pink-500 w-20 h-16 mr-4 flex justify-center items-center bg-gray-900/5">
+            <a href="" class="font-bold text-sm tracking-tighter font-sans">Careers</a>
+          </nav>
+          <section class="flex relative flex-row items-center justify-center ">
+            <select name="" class="rounded-full px-4 font-sans font-bold text-white py-2 appearance-none bg-[#ef1871ec] focus:outline-none focus:bg-pink-600"  id="">
+              <option value="" class="bg-white appearance-none text-pink-500 px-4 py-3  h-[30px] focus:text-pink-950 focus:bg-slate-300">Choose Location</option>
+              <option value="" class="bg-white appearance-none text-pink-500 px-4 py-3  h-[30px] focus:text-pink-950 focus:bg-slate-300">India</option>
+              <option value="" class="bg-white appearance-none text-pink-500 px-4 py-3  h-[30px] focus:text-pink-950 focus:bg-slate-300">Singapore</option>
+              <option value="" class="bg-white appearance-none text-pink-500 px-4 py-3  h-[30px] focus:text-pink-950 focus:bg-slate-300">Malyasia</option>
+            </select>   
+            <section class="flex flex-row items-center justify-between absolute  z-20 overflow-hidden invisible   border-pink-400 border-[1px] rounded-full" id="pop-up">
+              <input type="text" class="focus:outline-none px-3 py-2" name="" placeholder="hai" >
+             <button class="px-3 bg-white text-pink-600" onclick="closePopup()">
+              <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"  stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+              </svg>
+             </button>
+            </section>
+          </section>
+          <section class="flex flex-row items-center justify-center ml-[10px]">
+            <button id="pop-btn" onclick="openPopup()">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+              </svg>
+            </button>
+          </sectiion>
+        </section>
+        
+      </section>
+      
+
+      <!--  only lg  and above elements end -->
+
+    </section>
+    <!-- middle sec end -->
+
+    <!--  mobile sec start -->
+    <section class="flex lg:hidden z-50 right-[3%] lg:mx-6 absolute flex-row items-center   justify-center w-auto px-auto ">
+      <!-- navtoggler btn  start-->
+      <button class=" px-3 py-2 text-pink-500 w-auto h-auto  " id="mobile-btn" onclick="mobileup()">
+        &#x2630
+      </button>
+      <!-- nav btn end -->
+    </section>
+    <!--  mobile sec end -->
+
+  </header>
+  <!-- mobile menu-->
+  <section class="absolute z-30 bg-slate-200 w-full invisible py-[5%]" id="mobile-menu">
+    <ul class="ml-[2%]">
+      <li class="font-sans text-[18px]"><a href="#">Home</a></li>
+      <li class="font-sans text-[18px]"><a href>About</a></li>
+      <li class="font-sans text-[18px]"><a href="">Newsroom</a></li>
+      <li class="font-sans text-[18px]"><a href="">panda ads</a></li>
+      <li class="font-sans text-[18px]"><a href="">Contact</a></li>
+      <li class="font-sans text-[18px]"><a href="">Careers</a></li>
+      <li class="font-sans text-[18px]"><a href="" class="cursor-default">Choose location</a></li>
+      <ul class="max-sm:mx-[10%] md:mx-[4%]">
+        <li class="font-sans text-[18px]"><a href="">India</a></li>
+        <li class="font-sans text-[18px]"><a href="">Malyasia</a></li>
+        <li class="font-sans text-[18px]"><a href="">Singapore</a></li>
+      </ul>
+      
+    </ul>
+  </section>
+  <!-- background video  -->
+  <section id="bgvideo" class="w-auto m-0 p-0 max-sm:h-[320px] max-md:h-[200px] sm:h-[320px] md:h-[500px]  lg:h-[640px]   relative" >
+    <video src="video/756fee5f-dcd65a5b.mp4" class="absolute brightness-50 object-cover m-0  w-full h-full" muted autoplay loop ></video>  
+    <section class="absolute z-10   flex flex-row justify-end items-center m-auto top-[85%]  left-[25%] transform -translate-x-[25%] -translate-y-[90%]">
+        <h2 class="w-full lg:text-6xl sm:text-[38px] max-sm:text-[38px] md:text-[52px] max-md:text-[48px] font-bold  text-white">food and groceries in a tap</h2>
+    </section>
+  </section> 
+  <section class="w-auto flex flex-col py-[5%] lg:items-start sm:items-center  px-[2%]">
+    <section class="lg:ml-[12%] mx-auto ">
+        <h1 class="text-gray-700 font-bold  leading-normal lg:text-[40px]  max-sm:text-[28px]  sm:text-[20px] md:text-[32px]">We’re here to help you live life the panda<br> way. Spend more time doing what you love –<br> we’ll take care of tasty meals, fresh groceries<br> and new flavours.</h1>
+    </section>
+  </section>
+  
+<!-- hero section  -->
+<section class="flex justify-between flex-col sm:gap-[50px] max-sm:gap-[50px] lg:gap-0 md:gap-[50px] ">  
+  <section class="flex lg:flex-row md:flex-col sm:flex-col items-center justify-between  max-sm:flex-col lg:mx-auto  lg:px-[7%] md:px-0  max-sm:px-0">
+    <section class=" md:w-[738px] md:h-auto lg:w-[620px] flex items-center lg:mt-[5%] lg:h-[368px] bg-purple-400">
+      <img src="images/img-sec1.jpg" class="md:w-full md:h-full lg:w-full lg:h-full" alt="" srcset="">
+    </section>
+    <section class="flex flex-1 flex-col  justify-between md:w-[738px] md:h-[215px] sm:w-1/2 lg:pl-[2%]  md:px-0  max-sm:mt-[5%] max-sm:px-[5%] pt-[5%] ">
+      <section class="flex flex-row ">
+        <h1 class="text-4xl md:text-[28px] sm:text-[28px] max-sm:text-[28px] font-bold font-sans"> Meet the next generation of delivery! </h1>
+      </section>
+      <section class="flex flex-row items-center justify-center mt-[5%]">
+        <p class="text-md text-gray-500">What makes quick commerce quick? We stand for swift personalised delivery solutions for our customers, partners and employees. Learn how we empower authentic lifestyles and drive innovation across the globe.</p>
+      </section>
+      <section class="flex flex-row items-center mt-[5%] ">
+        <button class="bg-[#ff2b85]  rounded-full  max-sm:px-[30px] max-sm:py-[10px] sm:px-[30px] sm:py-[10px]  text-white font-sans sm:text-[14px] font-semibold">read our story</button>
+      </section>
+    </section>
+  </section>
+
+  <section class="flex lg:flex-row md:flex-col-reverse sm:flex-col-reverse items-center justify-between bg-red-300 max-sm:flex-col-reverse lg:mx-auto  lg:px-[7%] md:px-0  max-sm:px-0">
+    
+    <section class="flex flex-1 flex-col  justify-between md:w-[738px] md:h-[215px] sm:w-1/2 lg:pl-[2%]  md:px-0  max-sm:mt-[5%] max-sm:px-[5%] pt-[5%] ">
+      <section class="flex flex-row ">
+        <h1 class="text-4xl md:text-[28px] sm:text-[28px] max-sm:text-[28px] font-bold font-sans">Taste the convenience. </h1>
+      </section>
+      <section class="flex flex-row  mt-[5%]">
+        <p class="text-md text-gray-500">Try us out! Delicious food and speedy groceries are at your fingertips.<br> Go ahead, download foodpanda now.</p>
+      </section>
+      <section class="flex flex-row items-center flex-wrap mt-[4%]">
+          <section class="flex flex-row items-center mr-[2%]">
+            <section class="w-[142px]  h-[44px] mr-[4%] ">
+             <img src="images/app-google.png" alt="" class="w-full h-full hover:opacity-75 hover:cursor-pointer transition duration-[1s]" srcset="">
+            </section>
+            <section class=" w-[132px] h-[44px] ">
+              <img src="images/app-apple.png" class="w-full h-full hover:opacity-75 hover:cursor-pointer transition duration-[1s]" alt="" srcset="">
+            </section>
+          </section>
+          <section class=" flex flex-row  sm:mt-[2%] md:mt-0  max-sm:mt-[2%]  w-[142px] h-[44px] ">
+           <img src="images/app-huawei.png" class="w-full h-full hover:opacity-75 hover:cursor-pointer transition duration-[1s]"  alt="" srcset="">
+          </section>
+      </section>
+    </section>
+    <section class="md:w-[738px] md:h-auto lg:w-[620px] flex items-center lg:mt-[5%] lg:h-[368px] bg-purple-400">
+      <img src="images/img-sec-2.jpg" class="md:w-full md:h-full lg:w-full lg:h-full" alt="" srcset="">
+    </section>
+  </section>
+
+  <section class="flex lg:flex-row md:flex-col sm:flex-col items-center justify-between  max-sm:flex-col bg-sky-400 lg:mx-auto  lg:px-[7%] md:px-0  max-sm:px-0">
+    <section class=" md:w-[738px] md:h-auto lg:w-[620px] flex items-center lg:mt-[5%] lg:h-[368px] bg-purple-400">
+      <img src="images/img.jpg" class="md:w-full md:h-full lg:w-full lg:h-full" alt="" srcset="">
+    </section>
+    <section class="flex flex-1 flex-col  justify-between md:w-[738px] md:h-[215px] sm:w-1/2 lg:pl-[2%]  md:px-0  max-sm:mt-[5%] max-sm:px-[5%] pt-[5%] ">
+      <section class="flex flex-row ">
+        <h1 class="text-4xl md:text-[28px] sm:text-[28px] max-sm:text-[28px] font-bold font-sans">Find the job you'd love </h1>
+      </section>
+      <section class="flex flex-row  mt-[5%]">
+        <p class="text-md text-gray-500">Hungry to make a difference? There’s a seat at our table!</p>
+      </section>
+      <section class="flex flex-row  mt-[2%]">
+        <p class="text-md text-gray-500">Find out how we connect tech, passions, projects and people – <br> explore international career opportunities at foodpanda.</p>
+      </section>
+      <section class="flex flex-row items-center mt-[5%] ">
+        <button class="bg-[#ff2b85]  rounded-full  max-sm:px-[30px] max-sm:py-[10px] sm:px-[30px] sm:py-[10px]  text-white font-sans sm:text-[14px] font-semibold">read our story</button>
+      </section>
+    </section>
+  </section>
+</section>
+<section class="w-auto flex flex-row py-[5%] items-center justify-center  px-[2%]">
+  <section class=" mx-auto text-center ">
+      <h1 class="text-gray-700 font-bold  leading-normal lg:text-[40px]  max-sm:text-[28px]  sm:text-[20px] md:text-[32px]">Have you heard?</h1>
+      <p class="text-md text-gray-500 mt-[2%]">The industry is changing fast! Stay up to date with foodpanda press. Catch up on the lates news, updates and reports here.</p>
+  </section>
+</section>
+
+<section id="slider-cntr" class="flex  relative flex-col items-center justify-around sm:py-[5%] md:py-[4%] lg:py-0">
+  <nav class="absolute z-50 flex items-center left-0  top-[10%] bottom-[10%]">
+    <button class=" text-gray-400 text-4xl bg-black/60" onclick="prev()">
+      <svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+      </svg>        
+    </button>
+  </nav>
+  <section id="slider" class="flex  relative flex-row flex-1 mx-auto gap-[2%] transition-margin duration-[1000ms] sm:px-[4%] max-sm:px-[6%] lg:px-[2%] md:px-[3%]">
+    
+    <aside class="flex relative  flex-col rounded-xl overflow-hidden w-[360px] h-[520px]">
+      <img src="images/slider-4.jpeg" class="w-full object-cover brightness-50 object-center h-full" alt="" srcset="">
+      <section class="absolute top-[4%] right-0 left-[2%] flex flex-row flex-1 items-center  gap-[4%]">
+          <a href="" class="text-[14px] font-sans font-bold text-white">BUSSINESS</a>
+          <a href="" class="text-[14px] font-sans font-bold text-white">MERCHANTS</a>
+          <a href="" class="text-[14px] font-sans font-bold text-white">PRESS</a>
+      </section>
+      <section class=" absolute flex flex-col gap-[1%] bottom-[5%] left-[5%] right-[2%]">
+           <h1  class="font-sans font-bold text-white text-[28px]">foodpanda</h1> 
+           <h1  class="font-sans font-bold text-white text-[28px]">recoganised as an</h1> 
+           <h1  class="font-sans font-bold text-white text-[28px]">inclusive workplace</h1>
+           <h1  class="font-sans font-bold text-white text-[28px]">with Enabaling Mark</h1>
+           <h1  class="font-sans font-bold text-white text-[28px]">accreditaion in</h1>
+           <h1  class="font-sans font-bold text-white text-[28px]">Singapore</h1>
+      </section>
+    </aside>
+    <aside class="flex relative flex-col rounded-xl overflow-hidden w-[360px] h-[520px]">
+      <img src="images/slider-5.jpg" class="w-full object-cover brightness-50 object-center h-full" alt="" srcset="">
+      <section class="absolute top-[4%] right-0 left-[2%] flex flex-row flex-1 items-center  gap-[4%]">
+          <a href="" class="text-[14px] font-sans font-bold text-white">BUSSINESS</a>
+          <a href="" class="text-[14px] font-sans font-bold text-white">MERCHANTS</a>
+          <a href="" class="text-[14px] font-sans font-bold text-white">PRESS</a>
+      </section>
+      <section class=" absolute flex flex-col gap-[1%] bottom-[5%] left-[5%] right-[2%]">
+           <h1  class="font-sans font-bold text-white text-[28px]">foodpanda</h1> 
+           <h1  class="font-sans font-bold text-white text-[28px]">recoganised as an</h1> 
+           <h1  class="font-sans font-bold text-white text-[28px]">inclusive workplace</h1>
+           <h1  class="font-sans font-bold text-white text-[28px]">with Enabaling Mark</h1>
+           <h1  class="font-sans font-bold text-white text-[28px]">accreditaion in</h1>
+           <h1  class="font-sans font-bold text-white text-[28px]">Singapore</h1>
+      </section>
+    </aside>
+    <aside class="flex relative flex-col rounded-xl overflow-hidden w-[360px] h-[520px]">
+      <img src="images/slider-6.png" class="w-full object-cover brightness-50 object-center h-full" alt="" srcset="">
+      <section class="absolute top-[4%] right-0 left-[2%] flex flex-row flex-1 items-center  gap-[2%]">
+          <a href="" class="text-[14px] font-sans font-bold text-white">BUSSINESS</a>
+          <a href="" class="text-[14px] font-sans font-bold text-white">MERCHANTS</a>
+          <a href="" class="text-[14px] font-sans font-bold text-white">PRESS</a>
+      </section>
+      <section class=" absolute flex flex-col gap-[1%] bottom-[5%] left-[5%] right-[2%]">
+           <h1  class="font-sans font-bold text-white text-[28px]">foodpanda</h1> 
+           <h1  class="font-sans font-bold text-white text-[28px]">recoganised as an</h1> 
+           <h1  class="font-sans font-bold text-white text-[28px]">inclusive workplace</h1>
+           <h1  class="font-sans font-bold text-white text-[28px]">with Enabaling Mark</h1>
+           <h1  class="font-sans font-bold text-white text-[28px]">accreditaion in</h1>
+           <h1  class="font-sans font-bold text-white text-[28px]">Singapore</h1>
+      </section>
+    </aside>
+    <aside class="flex relative flex-col rounded-xl overflow-hidden w-[360px] h-[520px]">
+      <img src="images/slider 3.jpg" class="w-full object-cover brightness-50 object-center h-full" alt="" srcset="">
+      <section class="absolute top-[4%] right-0 left-[2%] flex flex-row flex-1 items-center  gap-[4%]">
+          <a href="" class="text-[14px] font-sans font-bold text-white">BUSSINESS</a>
+          <a href="" class="text-[14px] font-sans font-bold text-white">MERCHANTS</a>
+          <a href="" class="text-[14px] font-sans font-bold text-white">PRESS</a>
+      </section>
+      <section class=" absolute flex flex-col gap-[1%] bottom-[5%] left-[5%] right-[2%]">
+           <h1  class="font-sans font-bold text-white text-[28px]">foodpanda</h1> 
+           <h1  class="font-sans font-bold text-white text-[28px]">recoganised as an</h1> 
+           <h1  class="font-sans font-bold text-white text-[28px]">inclusive workplace</h1>
+           <h1  class="font-sans font-bold text-white text-[28px]">with Enabaling Mark</h1>
+           <h1  class="font-sans font-bold text-white text-[28px]">accreditaion in</h1>
+           <h1  class="font-sans font-bold text-white text-[28px]">Singapore</h1>
+      </section>
+    </aside>
+    <aside class="flex relative flex-col rounded-xl overflow-hidden w-[360px] h-[520px]">
+      <img src="images/slider 1.jpg" class="w-full object-cover brightness-50 object-center h-full" alt="" srcset="">
+      <section class="absolute z-10 top-[4%] right-0 left-[2%] flex flex-row flex-1 items-center  gap-[4%]">
+          <a href="" class="text-[14px] font-sans font-bold text-white">BUSSINESS</a>
+          <a href="" class="text-[14px] font-sans font-bold text-white">MERCHANTS</a>
+          <a href="" class="text-[14px] font-sans font-bold text-white">PRESS</a>
+      </section>
+      <section class=" absolute z-10 flex flex-col gap-[1%] bottom-[5%] left-[5%] right-[2%]">
+           <h1  class="font-sans font-bold text-white text-[28px]">foodpanda</h1> 
+           <h1  class="font-sans font-bold text-white text-[28px]">recoganised as an</h1> 
+           <h1  class="font-sans font-bold text-white text-[28px]">inclusive workplace</h1>
+           <h1  class="font-sans font-bold text-white text-[28px]">with Enabaling Mark</h1>
+           <h1  class="font-sans font-bold text-white text-[28px]">accreditaion in</h1>
+           <h1  class="font-sans font-bold text-white text-[28px]">Singapore</h1>
+      </section>
+    </aside>
+
+
+    <aside class="flex relative flex-col rounded-xl overflow-hidden w-[360px] bg-slate-300 h-[520px]">
+      <img src="images/s2.png" class="w-full object-cover brightness-50 object-center h-full" alt="" srcset="">
+      <section class="absolute z-10 top-[4%] right-0 left-[2%] flex flex-row flex-1 items-center  gap-[4%]">
+          <a href="" class="text-[14px] font-sans font-bold text-white">BUSSINESS</a>
+          <a href="" class="text-[14px] font-sans font-bold text-white">MERCHANTS</a>
+          <a href="" class="text-[14px] font-sans font-bold text-white">PRESS</a>
+      </section>
+      <section class=" absolute z-10 flex flex-col gap-[1%] bottom-[5%] left-[5%] right-[2%]">
+           <h1  class="font-sans font-bold text-white text-[28px]">foodpanda</h1> 
+           <h1  class="font-sans font-bold text-white text-[28px]">recoganised as an</h1> 
+           <h1  class="font-sans font-bold text-white text-[28px]">inclusive workplace</h1>
+           <h1  class="font-sans font-bold text-white text-[28px]">with Enabaling Mark</h1>
+           <h1  class="font-sans font-bold text-white text-[28px]">accreditaion in</h1>
+           <h1  class="font-sans font-bold text-white text-[28px]">Singapore</h1>
+      </section>
+    </aside>
+   
+  </section>
+  <nav class="absolute z-50 flex items-center  top-[10%] bottom-[10%] right-0">
+    <button class=" text-gray-400 text-4xl bg-black/60" onclick="next()">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>            
+    </button>
+  </nav>
+  
+</section>
+
+<section class="flex lg:flex-row md:flex-col-reverse sm:flex-col-reverse items-center justify-between  max-sm:flex-col-reverse lg:mx-auto mt-[5%]  lg:px-[7%] md:px-0  max-sm:px-0">
+
+  <section class="flex flex-1 flex-col  justify-between md:w-[738px] md:h-[215px] sm:w-1/2 lg:pr-[2%]  md:px-0  max-sm:mt-[5%] max-sm:px-[5%] pt-[5%] ">
+    <section class="flex flex-row ">
+      <h1 class="text-4xl md:text-[28px] sm:text-[28px] max-sm:text-[28px] font-bold font-sans">Feed your team. </h1>
+    </section>
+    <section class="flex flex-row items-center justify-center mt-[5%]">
+      <p class="text-md text-gray-500">Treat your talented team to their favourite meals. Let them pick! Explore flexible corporate food delivery options and tasty employee perks.</p>
+    </section>
+    <section class="flex flex-row items-center mt-[5%] ">
+      <button class="bg-[#ff2b85]  rounded-full  max-sm:px-[30px] max-sm:py-[10px] sm:px-[30px] sm:py-[10px]  text-white font-sans sm:text-[14px] font-semibold">read our story</button>
+    </section>
+  </section>
+  <section class=" md:w-[738px] md:h-auto lg:w-[620px] flex items-center lg:mt-[5%] lg:h-[300px] bg-purple-400">
+    <img src="images/foodpanda-home-3.jpg" class="md:w-full md:h-full lg:w-full lg:h-full" alt="" srcset="">
+  </section>
+</section>
+<footer class="flex flex-row  bg-black  text-white max-sm:mt-[10%] md:mt-[5%] ">
+  <section class="flex flex-col bg-black  w-full sm:gap-[50px] px-[10%] py-[5%]">
+    <section class="flex flex-row items-center justify-between">
+      <img src="images/foodpanda_logo_2023.svg"  alt="" srcset="">
+      <button class="bg-black">&nbsp;</button>
+    </section>
+    <section class="flex  md:flex-row items-center justify-between">
+
+      <section class="flex   flex-row items-start max-sm:flex-col md:gap-[30%]">
+        <section class="flex flex-row gap-[20%]">
+          <section class=" max-sm:my-[20%] ">
+            <h1 class="text-[18px] font-sans font-bold">Navigate</h1>
+            <h1 class="font-sans text-[14px] font-bold" >Home</h1>
+            <h1 class="font-sans text-[14px] font-bold" >About</h1>
+            <h1 class="font-sans text-[14px] font-bold" >Contact</h1>
+            <h1 class="font-sans text-[14px] font-bold" >Newsroom</h1>
+          </section>
+          <section class=" max-sm:my-[20%]">
+            <h1 class="text-[18px] font-sans font-bold">Collaborate</h1>
+            <h1 class="font-sans text-[14px] font-bold" >Explore careers</h1>
+            <h1 class="font-sans text-[14px] font-bold" >Become rider</h1>
+            <h1 class="font-sans text-[14px] font-bold" >Try panda ads</h1>
+            <h1 class="font-sans text-[14px] font-bold" >Our team</h1>
+          </section>
+        </section>
+        
+        <section class="flex flex-col max-sm:items-start justify-start">
+          <h1 class="font-sans font-bold text-[16px]">Follow us on</h1>
+          <section class="flex flex-row items-center  gap-[2%]">        
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002ZM7 8.48H3V21h4V8.48Zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M23.643 4.937c-.835.37-1.732.62-2.675.733a4.67 4.67 0 0 0 2.048-2.578a9.3 9.3 0 0 1-2.958 1.13a4.66 4.66 0 0 0-7.938 4.25a13.229 13.229 0 0 1-9.602-4.868c-.4.69-.63 1.49-.63 2.342A4.66 4.66 0 0 0 3.96 9.824a4.647 4.647 0 0 1-2.11-.583v.06a4.66 4.66 0 0 0 3.737 4.568a4.692 4.692 0 0 1-2.104.08a4.661 4.661 0 0 0 4.352 3.234a9.348 9.348 0 0 1-5.786 1.995a9.5 9.5 0 0 1-1.112-.065a13.175 13.175 0 0 0 7.14 2.093c8.57 0 13.255-7.098 13.255-13.254c0-.2-.005-.402-.014-.602a9.47 9.47 0 0 0 2.323-2.41l.002-.003Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256"><path fill="currentColor" d="M176 24H80a56.06 56.06 0 0 0-56 56v96a56.06 56.06 0 0 0 56 56h96a56.06 56.06 0 0 0 56-56V80a56.06 56.06 0 0 0-56-56Zm-48 152a48 48 0 1 1 48-48a48.05 48.05 0 0 1-48 48Zm60-96a12 12 0 1 1 12-12a12 12 0 0 1-12 12Zm-28 48a32 32 0 1 1-32-32a32 32 0 0 1 32 32Z"/></svg>
+          </section>
+        </section>  
+      </section>
+
+    </section>
+    <section class="flex flex-row items-start  justify-between  max-sm:flex-col max-sm:mt-[10%]">
+      <section class="hover:cursor-pointer">Copyright © 2023 <a href="#slider" class="hover:underline">foodpanda</a></section>
+      <section>Privacy Policy</section>
+    </section>
+  </section>
+</footer>
+
+<script src="JS/main.js"></script>
+<script src="JS/button.js"></script>
+
+
+</body>    
+</html>

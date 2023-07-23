@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+    font-family: Helva;
+    src: url("font/Helvetica\ Neue\ W01\ 87\ Hv\ Cn\ Obl.otf");
+}
+
+
+
