@@ -749,6 +749,14 @@ video {
   cursor: default;
 }
 
+.snap-x {
+  scroll-snap-type: x var(--tw-scroll-snap-strictness);
+}
+
+.snap-mandatory {
+  --tw-scroll-snap-strictness: mandatory;
+}
+
 .appearance-none {
   -webkit-appearance: none;
      -moz-appearance: none;
