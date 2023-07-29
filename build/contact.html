@@ -110,18 +110,18 @@
     </section>
   </section>
 
- <section class="flex flex-row sm:items-center max-sm:items-center md:items-center lg:items-start  py-[3%] max-sm:justify-center sm:justify-center">
+ <section class="flex flex-row sm:items-center max-sm:items-center md:items-center   py-[3%] max-sm:justify-center sm:justify-center">
   <form  id="form" class="md:mx-auto lg:mx-[8%] md:w-[800px] lg:w-[1000px] flex flex-col " method="get">
-    <section class=" flex flex-row gap-[2%] overflow-hidden max-sm:flex-col">
-      <section class="flex flex-col w-[350px] max-sm:mb-[4%] sm:mb-[4%]">
+    <section class=" flex flex-row gap-[2%] overflow-hidden max-sm:flex-col md:flex-col lg:flex-row">
+      <section class="flex flex-col lg:w-[350px] max-sm:mb-[4%] sm:mb-[4%] md:w-auto">
         <input type="text" name="" id="name" class=" w-full text-[18px] pl-[5%] rounded-full border-black border-[1px] py-[2%] focus:outline-none " placeholder="Name" required>
       </section>
-      <section class="flex flex-col w-[350px]">
+      <section class="flex flex-col lg:w-[350px] md:w-auto md:mb-[20px]">
         <input type="text" name="" id="email" class=" w-full text-[18px] pl-[5%] rounded-full border-black border-[1px] py-[2%] focus:outline-none max-sm:mb-[10px] " placeholder="Email" required onkeyup="emailcheck()">
         <h1 id="email-warn" class="text-[15px] text-[#FF0000] mx-[2%]"></h1>
       </section>
     </section>
-    <section class="">
+    <section class="lg:w-[800px] md-w-auto">
       <textarea class="appearance-none w-full rounded-2xl  border-black border-[1px] font-sans text-[18px] pl-[5%] pt-[2%] placeholder:text-[22px]" name="" id="" cols="30" rows="10" placeholder="message"></textarea>
     </section>
     
@@ -140,7 +140,7 @@
     </section>
     <section class="flex  md:flex-row items-center justify-between">
 
-      <section class="flex   flex-row items-start max-sm:flex-col md:gap-[375px] lg:gap-[870px]">
+      <section class="flex  max-sm:flex-col md:flex-col   md:gap-[0px] lg:gap-[600px] lg:flex-row">
         <section class="flex flex-row md:gap-[20%] lg:gap-[200px] max-sm:gap-[20%]">
           <section class=" max-sm:my-[20%] ">
             <h1 class="text-[18px] font-sans font-bold">Navigate</h1>
@@ -158,7 +158,7 @@
           </section>
         </section>
         
-        <section class="flex flex-col max-sm:items-start md:items-center">
+        <section class="flex flex-col max-sm:items-start ">
           <h1 class="font-sans font-bold text-[16px]">Follow us on</h1>
           <section class="flex flex-row items-center  gap-[2%]">        
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002ZM7 8.48H3V21h4V8.48Zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68Z"/></svg>
